@@ -152,7 +152,7 @@ export default function Home() {
               Education
             </p>
             <h3 className="mt-3 text-xl font-semibold">
-              Software Engineering
+              Information Systems
             </h3>
             <p className="mt-2 text-sm leading-6 text-[#68625C]">
               Bachelor&apos;s Degree — UDF Centro Universitário.
@@ -247,6 +247,124 @@ export default function Home() {
         </div>
       </section>
 
+      <section
+        id="wjrfin"
+        className="mx-auto max-w-7xl px-6 pb-24 lg:px-12"
+      >
+        <div className="mb-12 flex flex-wrap items-end justify-between gap-5">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.25em] text-[#765D49]">
+              Selected work / 02
+            </p>
+            <h2 className="mt-4 text-5xl font-semibold tracking-[-0.06em]">
+              WJRFIN
+            </h2>
+          </div>
+
+          <span className="text-sm text-[#68625C]">
+            Multi-Tenant Financial Management SaaS
+          </span>
+        </div>
+
+        <div className="overflow-hidden rounded-[2rem] border border-[#DDD8D1] bg-[#171717]">
+          <img
+            src="/images/wjrfin/dashboard.png"
+            alt="WJRFIN financial dashboard showing revenue, expenses and cash flow analytics"
+            className="block h-auto w-full"
+          />
+        </div>
+
+        <div className="mt-8 grid gap-8 md:grid-cols-[1fr_auto]">
+          <div>
+            <p className="max-w-2xl text-base leading-8 text-[#68625C]">
+              A full-stack financial management SaaS featuring secure
+              multi-company workspaces, role-based access control, financial
+              dashboards, transaction management and cash flow analytics.
+              Built with Supabase authentication, PostgreSQL Row Level
+              Security and server-side financial operations.
+            </p>
+
+            <p className="mt-4 max-w-2xl text-base leading-8 text-[#68625C]">
+              Supports BRL, USD, EUR and CNY transactions with server-side
+              currency conversion through an external exchange-rate API.
+              Original amounts, conversion rates and exchange-rate dates
+              are stored to preserve historical financial records.
+            </p>
+
+            <div className="mt-6 flex flex-wrap gap-2">
+              {[
+                "Next.js",
+                "React",
+                "TypeScript",
+                "Tailwind CSS",
+                "Supabase",
+                "PostgreSQL",
+                "RLS",
+                "REST APIs",
+              ].map((item) => (
+                <span
+                  key={item}
+                  className="rounded-full border border-[#DDD8D1] px-4 py-2 text-xs"
+                >
+                  {item}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          <div className="flex flex-wrap items-start gap-3">
+            <a
+              href="https://github.com/wilsonjr-create/WJRFIN"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-lg bg-[#765D49] px-6 py-4 text-sm text-white transition-colors hover:bg-[#5E4939]"
+            >
+              Source code &rarr;
+            </a>
+          </div>
+        </div>
+
+        <div className="mt-12 grid gap-6 md:grid-cols-2">
+          <div>
+            <div className="overflow-hidden rounded-[1.5rem] border border-[#DDD8D1] bg-[#171717]">
+              <img
+                src="/images/wjrfin/transactions.png"
+                alt="WJRFIN multi-currency transaction management interface"
+                className="block h-auto w-full"
+              />
+            </div>
+            <h3 className="mt-4 text-lg font-semibold">
+              Multi-Currency Transactions
+            </h3>
+            <p className="mt-2 text-sm leading-7 text-[#68625C]">
+              Income and expense management, transaction filtering,
+              currency conversion and historical exchange-rate tracking.
+            </p>
+          </div>
+
+          <div>
+            <div className="overflow-hidden rounded-[1.5rem] border border-[#DDD8D1] bg-[#171717]">
+              <img
+                src="/images/wjrfin/cash-flow.png"
+                alt="WJRFIN cash flow reporting and financial analytics"
+                className="block h-auto w-full"
+              />
+            </div>
+            <h3 className="mt-4 text-lg font-semibold">
+              Cash Flow & Financial Analytics
+            </h3>
+            <p className="mt-2 text-sm leading-7 text-[#68625C]">
+              Company-specific financial indicators, cash flow
+              visualization and performance reporting.
+            </p>
+          </div>
+        </div>
+
+        <p className="mt-8 text-xs leading-6 text-[#68625C]">
+          Portfolio demonstration project. No real payment processing,
+          banking services or money transfers.
+        </p>
+      </section>
       <section id="experience" className="border-y border-[#DDD8D1] bg-white/60">
         <div className="mx-auto grid max-w-7xl gap-12 px-6 py-20 md:grid-cols-2 lg:px-12">
           <div>
@@ -282,10 +400,10 @@ export default function Home() {
             <div className="my-8 h-px bg-[#DDD8D1]" />
 
             <h3 className="text-lg font-semibold">
-              Bachelor&apos;s Degree in Software Engineering
+              Bachelor&apos;s Degree in Information Systems
             </h3>
             <p className="mt-2 text-sm text-[#68625C]">
-              UDF Centro Universitário · 2022–2026
+              UDF Centro Universitário · Jul 2022 – Aug 2026 · Completed
             </p>
           </div>
         </div>
